@@ -13,7 +13,9 @@ ALTER TABLE table_name DROP CONSTRAINT constraint_name;
 ```
 - Add ON DELETE CASCADE constraint:
 ```sql
-ALTER TABLE table_name DROP CONSTRAINT constraint_name, 
-ADD CONSTRAINT constraint_name FOREIGN KEY REFERENCES parent_table_name(parent_column) 
+ALTER TABLE table_name 
+DROP CONSTRAINT constraint_name, 
+ADD CONSTRAINT constraint_name 
+FOREIGN KEY REFERENCES parent_table_name(parent_column) 
 ON DELETE CASCADE;
 ```
